@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Validation</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="icon" type="image/x-icon" href="../Form/night-sky-moon-bdlgkile5f7jt8bl.jpg">
+
+</head>
+
+<body>
+
+    <input type="radio" id="loginForm" name="formToggle" checked>
+
+    <input type="radio" id="registerForm" name="formToggle">
+
+    <input type="radio" id="forgotForm" name="formToggle">
+
+
+
+    <div class="wrapper" id="loginFormContent">
+
+        <form id="myform" action="">
+
+            <!-- Login page -->
+
+
+
+            <h1>Login</h1>
+
+            <div class="input-box">
+
+                <input class="userName" type="text" placeholder="Username">
+
+
+                <p id="userError"></p>
+            </div>
+
+            <div class="input-box">
+
+                <input id="passWord" type="password" placeholder="Password">
+                <p id="passwdError"></p>
+
+
+            </div>
+
+            <div class="checkbox1">
+
+                <label><input type="checkbox">Remember Me</label>
+
+                <label for="forgotForm">Forgot Password</label>
+
+            </div>
+
+
+            <button type="submit" class="btn Login-btn">Login</button>
+
+            <div class="link">
+
+                <p>Don't have an account? <label for="registerForm">Register</label></p>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="wrapper" id="registerFormContent">
+
+        <form id="myform2" action="">
+
+            <!-- Register page -->
+
+            <h1>Register</h1>
+
+            <div class="input-box">
+
+                <input class="userName" type="text" placeholder="Username">
+
+
+
+            </div>
+
+            <div class="input-box">
+
+                <input id="emailValidation" type="text" placeholder="Email">
+                <p id="EmailError"></p>
+
+
+            </div>
+
+            <div class="input-box">
+
+                <input id="register-passwd" type="password" placeholder="Password">
+                <p id="passwdValidation"></p>
+
+
+
+            </div>
+            <div class="input-box">
+
+                <input id="register-cm-passwd" type="password" placeholder="Confirm Password">
+                <p id="ConfirmPasswd"></p>
+
+
+
+            </div>
+
+            <div class="checkbox1">
+
+                <label><input id="check" type="checkbox">I agree to terms & conditions</label>
+
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+
+            <div class="link">
+
+                <p>Already have an account? <label for="loginForm">Login</label></p>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="wrapper" id="forgotFormContent">
+
+        <form action="">
+
+            <h1>Reset your password</h1>
+
+            <div class="input-box">
+
+                <input type="email" placeholder="Email" required>
+
+            </div>
+
+            <div class="input-box">
+
+                <button type="submit" class="btn">Send Request</button>
+
+                <div class="link">
+
+                    <p>Don't have an account? <label for="registerForm">Register</label></p>
+
+                </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+
+</html>
